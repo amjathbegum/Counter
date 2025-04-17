@@ -1,0 +1,211 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:1000px;
+    height: 1000px;
+    background-color: aquamarine;
+}
+.container-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+    height: 600px;
+    background-color: rgb(204, 85, 85);
+}
+.container-three{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:400px;
+    height:500px;
+    background-color: blueviolet;
+}
+.btnbox-one{
+   
+    width:350px;
+    height:200px;
+    background-color: rgb(230, 176, 138);
+}
+.btnbox-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width:400px;
+    height:100px;
+    background-color: rgb(179, 228, 89);
+}
+.btnbox-three{
+    width:100px;
+    height: 50px;
+    background-color: rgb(228, 188, 135);
+}
+.btnbox-four{
+   
+    width:100px;
+    height: 50px;
+    background-color: rgb(191, 122, 255);
+}
+.btnbox-five{
+    position: relative;
+    bottom:90px;
+    width:100px;
+    height: 50px;
+    background-color: rgb(209, 86, 86);
+}
+.btndecrese{
+    position:relative;
+    width:100px;
+    height:50px;
+    font-size: 15px;
+    text-align: center;
+    line-height:40px;
+    color:#fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size:400%;
+    border-radius: 30px;
+}
+.btndecrese:hover{
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%; 
+    }
+}
+.btndecrese:before{
+    content: '';
+    position: absolute;
+    top:-5px;
+    left:-5px;
+    right:-5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.btndecrese:hover:before{
+    filter: blur(20px);
+    opacity: 1;
+} 
+
+
+
+
+
+
+
+
+.btnincrese{
+    position:relative;
+    width:100px;
+    height:50px;
+    font-size: 15px;
+    text-align: center;
+    line-height:40px;
+    color:#fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size:400%;
+    border-radius: 30px;
+}
+.btnincrese:hover{
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%; 
+    }
+}
+.btnincrese:before{
+    content: '';
+    position: absolute;
+    top:-5px;
+    left:-5px;
+    right:-5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.btnincrese:hover:before{
+    filter: blur(20px);
+    opacity: 1;
+} 
+
+
+
+
+.counter{
+    width:300px;
+    height: 300px;
+    background-color: rgb(191, 153, 226);
+}
+
+
+
+.reset{
+    position:relative;
+    width:100px;
+    height:50px;
+    font-size: 15px;
+    text-align: center;
+    line-height:40px;
+    color:#fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size:400%;
+    border-radius: 30px;
+}
+.reset:hover{
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%; 
+    }
+}
+.reset:before{
+    content: '';
+    position: absolute;
+    top:-5px;
+    left:-5px;
+    right:-5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.reset:hover:before{
+    filter: blur(20px);
+    opacity: 1;
+} 
