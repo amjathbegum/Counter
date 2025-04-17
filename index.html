@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="counterStyle.css">
-    </head>
-    <body>
-        <div class="container">
-        <div class="container-two">
 
-        <div class="counter" id="counter">
-          <span class="counterspan"></span>0</div>
+<head>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="counterStyle.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-two">
+
+      <div class="counter-display" id="counter">0</div>
+        <div class="btnbox-one">
+          <button class="btndecrese" onclick="decrement()">- DECREMENT</button>
+        </div>
 
         <div class="btnbox-two">
-       
-          <div class="btnbox-three">
-            <button class="btndecrese" onclick="decrement()">- DECREMENT</button>
-          </div>
-          <div class="btnbox-four">
-            <button class="btnincrese" onclick="increment()">+ INCREMENT</button>
-          </div>
-  
+          <button class="reset" onclick="reset()">RESET</button>
+        </div>
+
+        <div class="btnbox-three">
+          <button class="btnincrese" onclick="increment()"> + INCREMENT</button>
+        </div>
+
+
+
+
       </div>
-
-      <div class="btnbox-five">
-        <button class="reset" onclick="reset()">RESET</button>
-      </div>
-
-
-
-    </div>
     </div>
     <script src="counter.js  "></script>
 
-    
 
-    </body>
+
+</body>
+
 </html>
