@@ -9,7 +9,13 @@ updateDisplay();
 }
 
 function decrement() {
-count--;
+if (count>0)
+{
+  count--;
+}
+else{
+  count=0;
+}
 updateDisplay();
 
 }
