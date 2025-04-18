@@ -35,14 +35,15 @@
     
 }
 .counter-display{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     position: relative;
     bottom:100px;
     width:430px;
     height: 160px;
     left:200px;
-    text-align: center;
-     align-items: center;
-     justify-content: center;
+    font-size: 100px;
     background-color: cadetblue;
 }
