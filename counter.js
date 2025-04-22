@@ -17,8 +17,9 @@ else{
   count=0;
 }
 updateDisplay();
-
 }
+
+
 function reset() {
 count = 0;
 updateDisplay();
