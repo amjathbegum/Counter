@@ -1,12 +1,26 @@
 let count = 0;
+let intervalid=null;
 
 function updateDisplay(){
   document.getElementById("counter").textContent = count;
 }
 function increment() {
-count++;
-document.getElementById("decrement").style.display = "inline-block"
-updateDisplay();
+  document.getElementById("decrement").style.display = "inline-block"
+  if(intervalid !== null) return;
+
+  intervalid=setInterval(() => {
+    if(count <50){
+      count++;
+      updateDisplay();
+    }
+    else{
+      clearInterval(intervalid);
+      intervalid=null;
+      alert("Count reached 50!")
+    }
+
+  }, 1000);
+
 }
 
 function decrement() {
