@@ -1,5 +1,7 @@
 let count = 0;
+let time = 0;
 let intervalid=null;
+let timeinterval=null;
 
 function updateDisplay(){
   document.getElementById("counter").textContent = count;
@@ -9,7 +11,7 @@ function increment() {
   if(intervalid !== null) return;
 
   intervalid=setInterval(() => {
-    if(count <100){
+    if(count <50){
       count++;
       updateDisplay();
     }
@@ -44,6 +46,10 @@ if(count === 0) {
 
 
 function reset() {
-count = 0;
-updateDisplay();
+
+ clearInterval(intervalid);
+ intervalid = null;
+
+ updateDisplay();
+
 }
