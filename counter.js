@@ -9,7 +9,7 @@ function increment() {
   if(intervalid !== null) return;
 
   intervalid=setInterval(() => {
-    if(count <50){
+    if(count <100){
       count++;
       updateDisplay();
     }
