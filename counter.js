@@ -5,6 +5,7 @@ function updateDisplay(){
 }
 function increment() {
 count++;
+document.getElementById("decrement").style.display = "inline-block"
 updateDisplay();
 }
 
@@ -15,8 +16,10 @@ if (count>0)
 }
 else{
   count=0;
+
 }
 updateDisplay();
+
 
 if(count === 0) {
   document.getElementById("decrement").style.display = "none";
