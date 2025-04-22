@@ -17,7 +17,13 @@ else{
   count=0;
 }
 updateDisplay();
+
+if(count === 0) {
+  document.getElementById("decrement").style.display = "none";
 }
+ 
+}
+
 
 
 function reset() {
