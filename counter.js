@@ -7,6 +7,7 @@ let count = 0;
 increseBtn.onclick =  function(){
   count++;
   countLabel.textContent = count;
+
 }
 
 resetBtn.onclick = function(){
@@ -15,8 +16,20 @@ resetBtn.onclick = function(){
 }
 
 decreseBtn.onclick = function() {
+  if(count >0){
    count--;
    countLabel.textContent = count;
+}
+else{
+ var x = document.getElementById("decreseBtn");
+   if(x.style.display === "none"){
+     x.style.display = "block";
+   }
+   else {
+    x.style.display = "none";
+   }
+
+}
 }
 
 
