@@ -1,49 +1,24 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:1200px;
-    height:800px;
-    background-color: rgb(249, 252, 251);
+
+#countLabel {
+ display: block;
+ text-align: center;
+ font-size: 10em;
+ background-color: rgb(11, 170, 143);
+ font-family: Arial, Helvetica, sans-serif;
 }
-.container-two{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width:400px;
-    height:400px;
-    background-color: rgb(253, 253, 253);
+#btnContainer {
+    text-align: center;
 }
-.btnbox-one{
-    width: 130px;
-    height:30px;
-    background-color: rgb(241, 243, 245);
-}
-.btnbox-two{
-    position: relative;
-    align-self: flex-end;
-    width: 150px;
-    height:30px;
-    bottom: 120px;
-    background-color:  rgb(252, 246, 248);
+.button{
+     padding: 10px 20px;
+     font-size: 1.5em;
+     color: white;
+     background-color: hsl(180, 100%, 74%);
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.25s;
 
 }
-.btnbox-three{
-    width: 120px;
-    height:30px;
-    background-color: rgb(247, 166, 90);
-    
-}
-.counter-display{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    bottom:100px;
-    width:430px;
-    height: 160px;
-    left:200px;
-    font-size: 100px;
-    background-color: cadetblue;
+.button:hover{
+    background-color: hsl(214,100%,56%);
 }

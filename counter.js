@@ -1,55 +1,22 @@
+const decreseBtn = document.getElementById("decreseBtn");
+const increseBtn = document.getElementById("increseBtn");
+const resetBtn = document.getElementById("resetBtn");
+
 let count = 0;
-let time = 0;
-let intervalid=null;
-let timeinterval=null;
 
-function updateDisplay(){
-  document.getElementById("counter").textContent = count;
-}
-function increment() {
-  document.getElementById("decrement").style.display = "inline-block"
-  if(intervalid !== null) return;
-
-  intervalid=setInterval(() => {
-    if(count <50){
-      count++;
-      updateDisplay();
-    }
-    else{
-      clearInterval(intervalid);
-      intervalid=null;
-      alert("Count reached 50!")
-    }
-
-  }, 1000);
-
+increseBtn.onclick =  function(){
+  count++;
+  countLabel.textContent = count;
 }
 
-function decrement() {
-if (count>0)
-{
-  count--;
+resetBtn.onclick = function(){
+  count = 0;
+  countLabel.textContent = count;
 }
-else{
-  count=0;
 
-}
-updateDisplay();
-
-
-if(count === 0) {
-  document.getElementById("decrement").style.display = "none";
-}
- 
+decreseBtn.onclick = function() {
+   count--;
+   countLabel.textContent = count;
 }
 
 
-
-function reset() {
-
- clearInterval(intervalid);
- intervalid = null;
-
- updateDisplay();
-
-}
