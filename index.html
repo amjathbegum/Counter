@@ -16,9 +16,11 @@
        <div id="btnContainer">
          <button id="decreseBtn" class="button">decrease</button>
          <button id="resetBtn" class="button">reset</button>
-         <button id="increseBtn" class="button">increase</button>
-         <button onClick="clearInterval(myTimer)">Stop counter!</button>
-
+         <button  onClick="myTimer = setInterval(increseBtn,1000)"  id="increseBtn" class="button">increase</button>
+         
+         <div class="timecontainer">
+         <p id="demo"></p>
+        </div>
        </div>
        
 
