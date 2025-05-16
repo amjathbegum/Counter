@@ -17,9 +17,10 @@ function myTimer(){
   
 
 increseBtn.addEventListener('click' ,function () {
-  if(count<20){
+  if(count<20 && count<30){
       count++; 
   }
+ 
   
    else if (count==count){
       let hrs = document.getElementById("hrs");
