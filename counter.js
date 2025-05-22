@@ -9,16 +9,18 @@ let count = 0;
 
 
 increseBtn.addEventListener('click', function () {
-  if (count < 10 || count % 10 != 0) {
     count++;
-  }
-  else if (count == 10 || count == 20 || count == 30 || count == 40) {
-    count++;
+ 
+   if (count == 10 || count == 20 || count == 30 || count == 40) {
+  
     const node = document.createElement("li");
     const d = new Date();
     const textnode = document.createTextNode(d.toLocaleTimeString());
+        const numbernode = document.createTextNode(count);
     node.appendChild(textnode);
+    node.appendChild(numbernode);
     document.getElementById("myList").appendChild(node);
+      document.getElementById("myNum").appendChild(node);
   }
 
   countLabel.textContent = count;
