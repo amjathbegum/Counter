@@ -47,7 +47,7 @@
 
     display: flex;
     justify-content: center;
- 
+
     width: 1000px;
     height: 600px;
     background-color: rgb(236, 180, 95);
@@ -62,14 +62,16 @@
     height: 400px;
     background-color: blueviolet;
 }
+
 .main-append {
-width: 200px;
+    width: 200px;
     height: 300px;
     background-color: rgb(168, 55, 190);
 
 
 }
-.append-num{
+
+.append-num {
     width: 200px;
     height: 300px;
     background-color: rgb(121, 211, 177);
