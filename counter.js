@@ -11,15 +11,16 @@ let count = 0;
 increseBtn.addEventListener('click', function () {
     count++;
  
-   if (count == 10 || count == 20 || count == 30 || count == 40) {
+   if (count == 10 || count == 20 || count == 30 || count == 40 || count==50 || count==60||count==70||count==80||count==90||count==100) {
   
     const node = document.createElement("li");
     const d = new Date();
-    const textnode = document.createTextNode(d.toLocaleTimeString());
-        const numbernode = document.createTextNode(count);
-    node.appendChild(textnode);
-    node.appendChild(numbernode);
+    const textnode = document.createTextNode(d.toLocaleTimeString());  
+    node.appendChild(textnode); 
     document.getElementById("myList").appendChild(node);
+    
+    const numbernode = document.createTextNode(count);
+     node.appendChild(numbernode);
       document.getElementById("myNum").appendChild(node);
   }
 
