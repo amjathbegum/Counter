@@ -8,27 +8,19 @@ const resetBtn = document.getElementById("resetBtn");
 let count = 0;
 
 
-increseBtn.addEventListener('click' ,function () {
-  if(count<10||count%10!=0){
-       count++;
+increseBtn.addEventListener('click', function () {
+  if (count < 10 || count % 10 != 0) {
+    count++;
   }
- else if(count==10||count==20 || count==30||count==40){
-  count++;
+  else if (count == 10 || count == 20 || count == 30 || count == 40) {
+    count++;
+    const node = document.createElement("li");
+    const d = new Date();
+    const textnode = document.createTextNode(d.toLocaleTimeString());
+    node.appendChild(textnode);
+    document.getElementById("myList").appendChild(node);
+  }
 
-const node = document.createElement("li");
-
-const d = new Date();
-
-const textnode = document.createTextNode(d.toLocaleTimeString());
-
-node.appendChild(textnode);
-
-document.getElementById("myList").appendChild(node);
- }
-
-
-  
-  
   countLabel.textContent = count;
   increseBtn.addEventListener('click', function () {
     decreseBtn.style.display = 'inline-block';
