@@ -18,8 +18,9 @@ increseBtn.addEventListener('click', function () {
     const textnode = document.createTextNode(d.toLocaleTimeString());
     node.appendChild(textnode);
     document.getElementById("myList").appendChild(node);
+    //const numbernode = document.createTextNode(count);
+    const numbernode = document.createElement("div");
 
-    const numbernode = document.createTextNode(count);
     node.appendChild(numbernode);
     document.getElementById("myNum").appendChild(node);
   }
