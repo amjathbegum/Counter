@@ -9,22 +9,25 @@ let count = 0;
 
 
 increseBtn.addEventListener('click', function () {
-  count++;
 
-  if (count == 10 || count == 20 || count == 30 || count == 40 || count == 50 || count == 60 || count == 70 || count == 80 || count == 90 || count == 100) {
+count++;
+
+
+if(count==20||count==30||count==40 ||count==50){
 
     const node = document.createElement("li");
     const d = new Date();
-    const textnode = document.createTextNode(d.toLocaleTimeString());
+    const textnode =document.createTextNode(d.toLocaleDateString());
+
     node.appendChild(textnode);
-    document.getElementById("myList").appendChild(node);
+    document.getElementById("myList").appendChild(node); 
     //const numbernode = document.createTextNode(count);
-    const numbernode = document.createElement("div");
-
-    node.appendChild(numbernode);
-    document.getElementById("myNum").appendChild(node);
-  }
-
+    const numbernode = document.createElement('div');
+     const mynumnode=document.createTextNode(count);
+    numbernode.appendChild(mynumnode);
+    document.getElementById("myNum").appendChild(numbernode);
+  
+}
   countLabel.textContent = count;
   increseBtn.addEventListener('click', function () {
     decreseBtn.style.display = 'inline-block';
