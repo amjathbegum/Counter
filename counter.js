@@ -7,9 +7,16 @@ const resetBtn = document.getElementById("resetBtn");
 
 let count = 0;
 
+function removefunction(){
+   const list =document.getElementById("myList");
+   const numlist=document.getElementById("myNum");
+      numlist.removeChild(numlist.lastElementChild);
+      list.removeChild(list.lastElementChild);
+}
 
 increseBtn.addEventListener('click', function () {
   count++;
+
 
 
   const numbers = [10, 20, 30, 40, 50, 60];
@@ -29,6 +36,9 @@ increseBtn.addEventListener('click', function () {
       const mynumnode = document.createTextNode(count);
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
+  
+    //  removefunction();
+   
 
     }
   }
