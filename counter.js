@@ -10,23 +10,27 @@ let count = 0;
 
 increseBtn.addEventListener('click', function () {
 
-count++;
+  count++;
 
+ const numbers =[10,20,30,40,50];
+ for(let i=0;i<numbers.length;i++){
+    let arrnum=numbers[i]; 
 
-if(count==20||count==30||count==40 ||count==50){
+  if (arrnum == 20 || arrnum == 30 || arrnum == 40 || arrnum == 50) {
 
     const node = document.createElement("li");
     const d = new Date();
-    const textnode =document.createTextNode(d.toLocaleDateString());
+    const textnode = document.createTextNode(d.toLocaleDateString());
 
     node.appendChild(textnode);
-    document.getElementById("myList").appendChild(node); 
+    document.getElementById("myList").appendChild(node);
     //const numbernode = document.createTextNode(count);
     const numbernode = document.createElement('div');
-     const mynumnode=document.createTextNode(count);
+    const mynumnode = document.createTextNode(count);
     numbernode.appendChild(mynumnode);
     document.getElementById("myNum").appendChild(numbernode);
-  
+
+  }
 }
   countLabel.textContent = count;
   increseBtn.addEventListener('click', function () {
