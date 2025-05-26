@@ -10,17 +10,17 @@ let count = 0;
 
 increseBtn.addEventListener('click', function () {
 
-  count++;
+  
 
  const numbers =[10,20,30,40,50];
  for(let i=0;i<numbers.length;i++){
     let arrnum=numbers[i]; 
 
   if (arrnum == 20 || arrnum == 30 || arrnum == 40 || arrnum == 50) {
-
+     count++;
     const node = document.createElement("li");
     const d = new Date();
-    const textnode = document.createTextNode(d.toLocaleDateString());
+    const textnode = document.createTextNode(d.toLocaleTimeString());
 
     node.appendChild(textnode);
     document.getElementById("myList").appendChild(node);
