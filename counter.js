@@ -9,15 +9,15 @@ let count = 0;
 
 
 increseBtn.addEventListener('click', function () {
-
+ count++;
   
 
  const numbers =[10,20,30,40,50];
  for(let i=0;i<numbers.length;i++){
-    let arrnum=numbers[i]; 
-
-  if (arrnum == 20 || arrnum == 30 || arrnum == 40 || arrnum == 50) {
-     count++;
+       
+  let numarr=numbers[i];
+  if (count== numarr || count == numarr || count == numarr || count == numarr) {
+ 
     const node = document.createElement("li");
     const d = new Date();
     const textnode = document.createTextNode(d.toLocaleTimeString());
