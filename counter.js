@@ -9,29 +9,29 @@ let count = 0;
 
 
 increseBtn.addEventListener('click', function () {
- count++;
-  
+  count++;
 
- const numbers =[10,20,30,40,50];
- for(let i=0;i<numbers.length;i++){
-       
-  let numarr=numbers[i];
-  if (count== numarr || count == numarr || count == numarr || count == numarr) {
- 
-    const node = document.createElement("li");
-    const d = new Date();
-    const textnode = document.createTextNode(d.toLocaleTimeString());
 
-    node.appendChild(textnode);
-    document.getElementById("myList").appendChild(node);
-    //const numbernode = document.createTextNode(count);
-    const numbernode = document.createElement('div');
-    const mynumnode = document.createTextNode(count);
-    numbernode.appendChild(mynumnode);
-    document.getElementById("myNum").appendChild(numbernode);
+  const numbers = [10, 20, 30, 40, 50, 60];
+  for (let i = 0; i < numbers.length; i++) {
 
+    let numarr = numbers[i];
+    if (count == numarr || count == numarr || count == numarr || count == numarr) {
+
+      const node = document.createElement("li");
+      const d = new Date();
+      const textnode = document.createTextNode(d.toLocaleTimeString());
+
+      node.appendChild(textnode);
+      document.getElementById("myList").appendChild(node);
+      //const numbernode = document.createTextNode(count);
+      const numbernode = document.createElement('div');
+      const mynumnode = document.createTextNode(count);
+      numbernode.appendChild(mynumnode);
+      document.getElementById("myNum").appendChild(numbernode);
+
+    }
   }
-}
   countLabel.textContent = count;
   increseBtn.addEventListener('click', function () {
     decreseBtn.style.display = 'inline-block';
