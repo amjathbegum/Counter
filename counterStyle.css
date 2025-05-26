@@ -88,10 +88,17 @@
 }
 .removeBtn{
   position: absolute;
-    width:90px;
-    height:40px;
+    width:130px;
+    height:50px;
     margin-top:300px;
-  
-
-    
+     padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: hsl(335, 77%, 45%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;   
+}
+.removeBtn:hover {
+    background-color: hsl(214, 100%, 56%);
 }
