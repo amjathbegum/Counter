@@ -87,11 +87,10 @@
     text-align: center;
 }
 .removeBtn{
-  
+  position: absolute;
     width:90px;
     height:40px;
     margin-top:300px;
-    
   
 
     
