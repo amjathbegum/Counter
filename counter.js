@@ -16,7 +16,7 @@ increseBtn.addEventListener('click', function () {
   for (let i = 0; i < numbers.length; i++) {
 
     let numarr = numbers[i];
-    if (count == numarr || count == numarr || count == numarr || count == numarr) {
+    if (count == numarr) {
 
       const node = document.createElement("li");
       const d = new Date();
