@@ -6,13 +6,19 @@ const resetBtn = document.getElementById("resetBtn");
 
 
 let count = 0;
-
+/*
 function removefunction(){
-   const list =document.getElementById("myList");
-   const numlist=document.getElementById("myNum");
-      numlist.removeChild(numlist.lastElementChild);
-      list.removeChild(list.lastElementChild);
-}
+   const removelist =document.getElementById("myList");
+    
+   removelist.addEventListener('click',function(event){
+if(event.target.classList.contains('removeBtn')) {
+  const listItem = event.target.parentNode;
+  removelist.removeChild(listItem);
+    
+  }
+});
+}*/
+
 
 increseBtn.addEventListener('click', function () {
   count++;
