@@ -103,6 +103,8 @@
     background-color: hsl(214, 100%, 56%);
 }
 .myinput{
+    position: relative;
     width:50px;
     height:30px;
+
 }
