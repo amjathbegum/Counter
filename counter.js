@@ -10,6 +10,7 @@ let count = 0;
 function removefunction(){
    const list =document.getElementById("myList");
    const numlist=document.getElementById("myNum");
+      const inputid=document.getElementById("myNum");
      list.removeChild(list.lastElementChild);
       numlist.removeChild(numlist.lastElementChild);
      
@@ -38,6 +39,11 @@ increseBtn.addEventListener('click', function () {
       const mynumnode = document.createTextNode(count);
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
+
+  
+      
+    
+
   
     //  removefunction();
    
