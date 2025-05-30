@@ -103,13 +103,12 @@
 .removeBtn:hover {
     background-color: hsl(214, 100%, 56%);
 }
-
-.myinput {
-    position: relative;
-    width: 100px;
-    height: 40px;
-    margin-top: 310px;
-    right: 350px;
-
+.deleteTask{
+   background-color: #ff6b6b;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   cursor: pointer;
 
 }

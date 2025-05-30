@@ -5,17 +5,32 @@ const resetBtn = document.getElementById("resetBtn");
 
 
 
+
 let count = 0;
 
-function removefunction(){
-   const list =document.getElementById("myList");
-   const numlist=document.getElementById("myNum");
-      const inputid=document.getElementById("myNum");
-     list.removeChild(list.lastElementChild);
-      numlist.removeChild(numlist.lastElementChild);
-     
+//function removefunction() {
+
+ // const list = document.getElementById("myList");
+ // const numlist = document.getElementById("myNum");
+
+   /* 
+    input.addEventListener('click', function(event) {
+         if(event.target.tagName === 'LI'){
+            event.target.remove
+         }
+
+    });
     
-}
+  
+
+
+      input.remove();*/
+    // list.remove();
+    //numlist.remove();
+   
+
+  //input.removeChild(input.)
+//}
 
 increseBtn.addEventListener('click', function () {
   count++;
@@ -40,13 +55,18 @@ increseBtn.addEventListener('click', function () {
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
 
-  
-      
-    
 
-  
-    //  removefunction();
-   
+     const removeBtn = document.createElement('button');
+
+    removeBtn.textContent='Remove';
+    removeBtn.className ='deleteTask';
+    
+    numbernode.appendChild(removeBtn);
+
+
+
+      //  removefunction();
+
 
     }
   }
