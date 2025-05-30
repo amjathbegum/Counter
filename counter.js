@@ -63,6 +63,12 @@ increseBtn.addEventListener('click', function () {
     
     numbernode.appendChild(removeBtn);
 
+    removeBtn.addEventListener('click',function(){
+        numbernode.removeChild(node);
+
+    });
+
+
 
 
       //  removefunction();
