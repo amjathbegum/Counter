@@ -2,6 +2,8 @@
 const decreseBtn = document.getElementById("decreseBtn");
 const increseBtn = document.getElementById("increseBtn");
 const resetBtn = document.getElementById("resetBtn");
+const myList= document.getElementById("myList");
+const myNum= document.getElementById("myNum");
 
 
 
@@ -54,17 +56,42 @@ increseBtn.addEventListener('click', function () {
       const mynumnode = document.createTextNode(count);
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
+    
+      saveTask();
 
 
+     
+
+
+
+    function saveTask(){
+           let task =[];
+           myList.querySelectorAll('li').forEach(function(increseBtn){
+              task.push(increseBtn.textContent.replace('Delete','').trim());
+  
+           });
+
+           localStorage.setItem('task',JSON.stringify(task));
+           
+
+  
+    }
+
+
+
+
+    
      const removeBtn = document.createElement('button');
 
     removeBtn.textContent='Remove';
     removeBtn.className ='deleteTask';
     
-    numbernode.appendChild(removeBtn);
+    myList.appendChild(removeBtn);
+   myNum.appendChild(removeBtn);
 
     removeBtn.addEventListener('click',function(){
-        numbernode.removeChild(node);
+        myList.removeChild(node);
+        myNum.removeChild(numbernode);
 
     });
 
