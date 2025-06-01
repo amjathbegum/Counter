@@ -107,8 +107,9 @@
    background-color: #ff6b6b;
    color: white;
    border: none;
-   padding: 3px 9px;
    border-radius: 5px;
    cursor: pointer;
+   margin-left: 150px;
+   margin-bottom: -10px;
 
 }

@@ -4,6 +4,7 @@ const increseBtn = document.getElementById("increseBtn");
 const resetBtn = document.getElementById("resetBtn");
 const myList= document.getElementById("myList");
 const myNum= document.getElementById("myNum");
+const myremove=document.getElementById("myremove");
 
 
 
@@ -57,17 +58,19 @@ increseBtn.addEventListener('click', function () {
       numbernode.appendChild(mynumnode);
       document.getElementById("myNum").appendChild(numbernode);
     
-      saveTask();
-
-
      
+
+
+
+   
+
 
 
 
     function saveTask(){
            let task =[];
-           myList.querySelectorAll('li').forEach(function(increseBtn){
-              task.push(increseBtn.textContent.replace('Delete','').trim());
+           myList.querySelectorAll('li').forEach(function(item){
+              task.push(item.textContent.replace('Remove','').trim());
   
            });
 
@@ -89,16 +92,17 @@ increseBtn.addEventListener('click', function () {
     myList.appendChild(removeBtn);
    myNum.appendChild(removeBtn);
 
+   
+
     removeBtn.addEventListener('click',function(){
         myList.removeChild(node);
         myNum.removeChild(numbernode);
+        myremove.removeChild(removeBtn);
 
-    });
-
-
-
-
-      //  removefunction();
+        //var deleteTask = this.parentElement;
+        //deleteTask.style.display="none";
+          saveTask();
+     });
 
 
     }
