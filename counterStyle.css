@@ -103,13 +103,14 @@
 .removeBtn:hover {
     background-color: hsl(214, 100%, 56%);
 }
-.deleteTask{
-   background-color: #ff6b6b;
-   color: white;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-   margin-left: 150px;
-   margin-bottom: -10px;
+
+.close {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-bottom: -10px;
 
 }
