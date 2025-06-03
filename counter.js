@@ -103,15 +103,20 @@ increseBtn.addEventListener('click', function () {
 
 
           close[i].onclick = function () {
+
             const element = document.getElementById("myList");
             element.remove();
             const Numelement = document.getElementById("myNum");
             Numelement.remove();
             //this.style.display="none";
-
+            var div = this.parentElement;
+            div.style.display = "none";
           }
         }
       });
+
+
+
 
 
 
